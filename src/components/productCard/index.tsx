@@ -11,7 +11,7 @@ export default function ProductCard({ product }: {product:Product}) {
       <img
         src={product.thumbnail}
         alt={product.title}
-        className="w-full h-40 object-cover rounded-lg"
+        className="w-full h-40 object-contain rounded-lg"
       />
       <h2 className="font-semibold mt-2">{product.title}</h2>
       <p className="text-gray-600 text-sm">${product.price}</p>
