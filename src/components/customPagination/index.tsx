@@ -29,7 +29,6 @@ export default function CustomPagination({
     ) {
       pageNumbers.push(i);
     } else if (i === currentPage - 2 || i === currentPage + 2) {
-      // فقط زمانی ellipsis اضافه کن که آخرین عنصر pageNumbers هم ellipsis نباشه
       if (pageNumbers[pageNumbers.length - 1] !== "ellipsis") {
         pageNumbers.push("ellipsis");
       }
